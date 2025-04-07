@@ -1,9 +1,20 @@
-import React from 'react'
+import FrameAbout from "@/components/FrameAbout"
+import FrameCTA from "@/components/FrameCTA"
+import FrameHero from "@/components/FrameHero"
+import FrameOrder from "@/components/FrameOrder"
+import FrameProduct from "@/components/FrameProduct"
 
-const Page = () => {
+
+const frames = () => {
   return (
-    <div>Page</div>
+    <>
+    <FrameHero />
+    <FrameAbout />
+    <FrameCTA />
+    <FrameProduct />
+    <FrameOrder />
+    </>
   )
 }
 
-export default Page
+export default frames

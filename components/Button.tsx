@@ -1,19 +1,27 @@
+'use client'
 import Image from "next/image"
+import { Icon } from "react-feather";
+import { ReactNode, useState } from "react";
 
 type ButtonProps = {
     type: 'button' | 'submit';
     title: string;
-    icon?: string;
+    IconDefault?: ReactNode;
+    IconHover?: ReactNode;
     variant: string;
 }
 
-const Button = ({type, title, icon, variant}: ButtonProps) => {
+const Button = ({type, title, IconDefault, IconHover,variant}: ButtonProps) => {
+  const [isHovered, setIsHovered] = useState(false);
+  
     return (
       <button 
-      className={`flexCenter gap-3 rounded-full ${variant}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={`flexCenter btn-gradient gap-3 transition-all duration-300 ease-in-out ${variant}`}
       type={type}
       >
-          {icon && <Image src={icon} alt={title} width={24} height={24} />}
+        {isHovered ? IconHover : IconDefault}
           <label className="bold-16 whitespace-nowrap cursor-pointer">{title}</label>
       </button>
     )

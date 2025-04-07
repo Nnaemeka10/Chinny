@@ -1,15 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 import Button from './Button'
+import {Gift, User} from 'react-feather'
 
 
 
 const Hero = () => {
   return (
-    <section className="max-container px-1 flex flex-col-reverse gap-20 py-5 pb-22 lg:gap-10 lg:py-20 lg:px-6 lg:flex-row-reverse hide-scrollbar">
+    <section className="max-container px-1 flex flex-col-reverse gap-10 md:gap-20 py-5 pb-22 lg:gap-10 lg:py-20 lg:px-6 lg:flex-row-reverse hide-scrollbar animate-fade-in">
 
         {/* Left */}
-        <div className=" relative h-screen w-full lg:w-1/2 lg:h-screen">
+        <div className=" relative h-[50vh] md:h-screen w-full lg:w-1/2 lg:h-screen">
             <Image
             src="/herobg.jpg"
             alt="Hero Image"
@@ -31,19 +32,24 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-10 sm:flex-row justify-start sm:w-full">
-                <Button 
-                type='button'
-                title='Book Therapy'
-                icon='/user.svg'
-                variant='btn_dark_blue'
-                />
+                <a href="#services"><Button 
+                    type='button'
+                    title='Our Services'
+                    IconDefault={<Gift  strokeWidth={3} size={30}/>}
+                    IconHover={<Gift className='text-blue-10' size={30} strokeWidth={3}/>}
+                    variant='btn_dark_blue'
+                    />
+                </a>
 
+                <a href="/#about-page"> 
                 <Button 
                 type='button'
-                title='Book Optometrics'
-                icon='/user.svg'
+                title='About Us'
+                IconDefault={<User  strokeWidth={3} size={30}/>}
+                IconHover={<User className='text-blue-10' size={30} strokeWidth={3}/>}
                 variant='btn_dark_blue'
                 />
+                </a>
             </div>
         </div>        
     </section>

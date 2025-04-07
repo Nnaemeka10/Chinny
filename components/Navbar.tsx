@@ -12,7 +12,7 @@ export const Navbar = () => {
         setIsOpen(!isOpen);
     }
   return (
-    <nav id="nav" className="flexBetween max-container padding-container relative z-30 py-5 no-scrollbar hide-scrollbar">
+    <nav id="nav" className="flexBetween max-container padding-container sticky z-50 py-5 no-scrollbar hide-scrollbar">
         <Link href="/" >
             <Image src="/logo.png" alt="logo" width={79} height={29}/>
         </Link>
@@ -37,7 +37,7 @@ export const Navbar = () => {
       <div className="lg:hidden">
             <div id="menu" className={`absolute flex-col items-center ${isOpen ? "flex" : "hidden"} self-end py-8 mt-10 space-y-6  bg-white-10 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
                 {NAV_LINKS.map((link) => (
-                  <Link className="hover:font-bold hover:text-blue-20"
+                  <Link className="hover:font-bold hover:text-blue-20 active:text-blue-10"
                   onClick={handleClick} 
                   href={link.href} 
                   key={link.key}>
