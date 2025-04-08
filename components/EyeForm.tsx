@@ -2,7 +2,7 @@ import React from 'react'
 
 const EyeForm = () => {
   return (
-    <section className="bg-white flex w-full min-h-screen overflow-hidden no-scrollbar relative flex-col">
+    <section id = 'eyeform' className="bg-white flex w-full min-h-screen overflow-hidden no-scrollbar relative flex-col">
         <div className="pt-6 flex flex-col flex-grow relative z-10">
           <div className="pt-12 pb-6 flex justify-center">
           <h1 className='text-2xl font-medium text-gray-900 mb-4'>Book Eye Consultancy</h1>
