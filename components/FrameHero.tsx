@@ -7,7 +7,7 @@ const FrameHero = () => {
     <section className="relative max-container px-1 flex flex-col gap-20 py-5 pb-22 lg:py-20 lg:px-6 hide-scrollbar animate-fade-in">
 
         {/* video */}
-        <div className='relative w-full h-dvh'>
+        <div className='relative w-full md:h-dvh h-[50vh]'>
         <div className="inset-0 absolute overflow-hidden -z-10 rounded-lg w-full " >
             <video
             className="object-cover w-full h-full brightness-50"
