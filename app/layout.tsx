@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <main className="relative overflow-hidden hide-scrollbar">
           {children}
           <Analytics />
+          <SpeedInsights />
         </main>
         
         <Footer />

@@ -14,7 +14,8 @@ const FrameHero = () => {
             autoPlay
             loop
             muted
-            playsInline>
+            playsInline
+            preload='auto'>
                 <source src="/framehero.mp4" type="video/mp4" />
                 your browser does not support the video tag
             </video>
