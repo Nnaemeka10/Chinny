@@ -196,13 +196,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         />
       </div>
       <button
-        className="absolute left-0 top-1/2 transform h-60 sm:h-[459px] rounded-xl hover:bg-[#1a222f] mx-1 -mt-[10px] -translate-y-1/2 bg-blue-950 text-white p-2 group"
+        className="absolute left-0 top-1/2 transform h-[40px]  rounded-full hover:bg-[#1a222f] mx-1 -mt-[10px] -translate-y-1/2 bg-blue-950 text-white p-2 group"
         onClick={prevSlide}
       >
         <ChevronLeft className="text-gray-400 group-hover:text-white" />
       </button>
       <button
-        className="absolute right-0 top-1/2 transform h-60 sm:h-[459px] rounded-xl hover:bg-[#1a222f] mx-1 -mt-[10px] -translate-y-1/2 bg-blue-950 text-white p-2 group"
+        className="absolute right-0 top-1/2 transform h-[40px] rounded-full hover:bg-[#1a222f] mx-1 -mt-[10px] -translate-y-1/2 bg-blue-950 text-white p-2 group"
         onClick={nextSlide}
       >
         <ChevronRight className="text-gray-400 group-hover:text-white" />
