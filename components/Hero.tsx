@@ -31,7 +31,7 @@ const Hero = () => {
                 </p>
             </div>
 
-            <div className="flex flex-col gap-10 sm:flex-row justify-start sm:w-full">
+            <div className="flex flex-col gap-10 sm:flex-row  items-center justify-start sm:w-full">
                 <a href="#services"><Button 
                     type='button'
                     title='Our Services'
