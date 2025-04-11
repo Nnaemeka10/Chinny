@@ -1,6 +1,4 @@
 import React from 'react'
-import { User } from 'react-feather'
-import Button from '@/components/Button'
 import Image from 'next/image'
 
 const FrameAbout = () => {

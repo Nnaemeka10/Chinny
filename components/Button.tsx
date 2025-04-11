@@ -1,6 +1,4 @@
 'use client'
-import Image from "next/image"
-import { Icon } from "react-feather";
 import { ReactNode, useState } from "react";
 
 type ButtonProps = {
